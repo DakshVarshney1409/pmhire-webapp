@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%} Home | PM-Hire{% endblock title%}
+
+{% block body%}
+    <!--Carousel start-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="{% static "images/caro1.png" %}" class="d-block w-100" alt="...">
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{% static "images/caro2.png" %}" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{% static "images/caro3.png" %}" class="d-block w-100" alt="...">
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    
+  <!--carousel end-->
+      <br>
+      
+   
+      <!-- BENEFITS start-->
+      <h2><p style="text-align:center;color:#004799;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Benefits for candidates</p></h2>
+
+         
+      <div class="container">
+      <div class="row">
+        
+      <div class="col-sm-4">
+        <div class="card mb-4 bg mx-auto h-100 shadow" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static "images/job.png" %}" style="max-height:100px" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><span style="color:#004799">Internships</span></h5>
+              <p class="card-text">We help you find the best product internships in top companies with market standard stipends.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mb-4 bg mx-auto h-100 shadow" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static "images/interim.png" %}" style="max-height:100px" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><span style="color:#004799">Get Upskilled</span></h5>
+              <p class="card-text">We not only give you the basics but guide you with real-life product cases, guesstimates, and the latest tools for the PM roles.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card mb-4 bg mx-auto h-100 shadow" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static "images/fresher.png" %}" style="max-height:100px" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title"><span style="color:#004799">Networking</span></h5>
+              <p class="card-text">We enable networking with the top talent in product management, we enable a strong sense of teamwork and peer learning through our cohort-based program.</p>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <br>
+      <h2><p style="text-align:center;color:#004799;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Benefits for companies</p></h2>
+
+      <div class="container">
+        <div class="row">
+          
+        <div class="col-sm-4">
+          <div class="card mb-4 bg mx-2 h-100 shadow" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static "images/quick.png" %}" style="max-height:100px" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><span style="color:#004799">Quick Process</span></h5>
+                <p class="card-text">Hire product interns quickly within 3 days as there are other crucial works in the startup.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card mb-4 bg mx-2 h-100 shadow" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static "images/effortless.png" %}" style="max-height:100px" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><span style="color:#004799">Effortless</span></h5>
+                <p class="card-text">Zero effort hiring
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card mb-4 bg mx-2 h-100 shadow" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{% static "images/best.png" %}" style="max-height:100px" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><span style="color:#004799">Best Quality</span></h5>
+                <p class="card-text">Best product interns are available for you as they have gone through the industry standard hiring process.</p>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+        <!--benefits ends-->
+
+
+          <br>
+          
+          <!--Pricing starts-->
+          <div class="container">
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h2><p id="price"style="text-align:center;color:#004799;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Pricing</p></h2>
+            <p class="fs-5 text-muted" style="color:#008bd9">A plan for everyone.<br>We have a variety of plans so that you aren't left behind while achieving the success of your dream company. <br>For pricing related details please contact contact@pmhire.in </p>
+          </div>
+
+          <!--pricing ends-->
+        <!--CTA start-->
+        <br>
+        <br>
+        <h2><p id="cta" style="text-align:center;color:#004799;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Apply Now!</p></h2>
+
+        <div class="container">
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+            <div class="h-100 p-3 bg rounded-3 shadow-lg">
+                
+                <h2 >I am an <span style="color:#004799">Employer</span></h2>
+                <p>We do the work so you don't have to. We hire and train the best product talent for your company to reach new heights. We can customize the curriculum and hiring criteria as per your requirements and promise to deliver the same within the stipulated time frame.<br><br>If this excites you then let's talk!
+                </p>
+                <button type="button" class="btn btn-secondary"><a href="/company">Start hiring!</a></button>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="h-100 p-3 bg rounded-3 shadow-lg">
+                <h2>I am a <span style="color:#004799">Candidate</span></h2>
+                <p>Apply to the best Product Management Cohort with a Guaranteed Internship program. During this short course, we train you as per the top companies' requirements and connect you with the top recruiters so you can have your dream career at your fingertips with this Program.<br><br>If you think the Product is what excites you, then let's connect!</p>
+                <button type="button" class="btn btn-secondary"><a href="/candidate">Apply now!</a></button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <!---CTA ends-->
+<br>
+<br>
+
+{% endblock body%}

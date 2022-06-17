@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%} Candidate | PM-Hire{% endblock title%}
+
+{% block body%}
+<img class="img-fluid" src="{% static "images/newim.png" %}" alt="Chania">
+<div class="container">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h2><p style="text-align:center;color:#004799;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Internships in countless industries</p></h2>
+      <p class="fs-5 text-muted" style="color:#008bd9">Unlock your boundless potential with PM-Hire!</p>
+    </div>
+    </div>
+    <!--form start-->
+    <div class="container py-1">
+      <div class="row">
+          <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
+              <h2 class="text-center mb-3" style="color:#008bd9;">Apply for an internship</h2>
+              <form name="google-sheet">
+                  
+                  <div class="form-group mb-3">
+                      <label for="name" class="form-label">Your name*</label>
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+                  
+                  <div class="form-group mb-3">
+                    <label for="phone" class="form-label">Phone number*(preferably WhatsApp number)</label>
+                    <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="college" class="form-label">College*</label>
+                  <input type="text" id="college" name="college" class="form-control" placeholder="Enter your college" required>
+              </div>
+                
+              <div class="form-group md-3">
+                <label for="role" class="form-label">Role type*</label>
+                <select id="role" name="role" class="form-control">
+                  <option value="Product management">Product Management</option>
+                  <option value="Product Analyst">Product Analyst</option>
+                  <option value="Product related field">Product related field</option>
+                  </select>
+              </div>
+              <div class="form-group md-3">
+              <label for="location" class="form-label">Role location preference*</label>
+              <select id="location" name="location" class="form-control">
+                <option value="Remote">Remote</option>
+                <option value="Onsite">Onsite</option>
+                
+                </select>
+            </div>
+
+                <div class="form-group mb-3">
+                  <label for="prev_stipend" class="form-label">Previous intern stipend</label>
+                  <input type="text" id="prev_stipend" name="prev_stipend" class="form-control" placeholder="Enter a value">
+              </div>
+              <div class="form-group mb-3">
+                <label for="stipend" class="form-label">Expected Stipend*</label>
+                <input type="text" id="stipend" name="stipend" class="form-control" placeholder="Enter expected stipend" required>
+            </div>
+            <div class="form-group md-3">
+              <label for="duration" class="form-label">Expected internship duration*</label>
+              <select id="duration" name="duration" class="form-control">
+                <option value="2 months">2 months</option>
+                <option value="3 months">3 months</option>
+                <option value="4 months">4 months</option>
+                <option value="6 months">6 months</option>
+                </select>
+            </div>
+            <div class="form-group md-3">
+              <label for="hours" class="form-label">Working hours preference*</label>
+              <select id="hours" name="hours" class="form-control">
+                <option value="Part-time">Part-time</option>
+                <option value="Full-time">Full-time</option>
+                
+                </select>
+            </div>
+            <div class="form-group md-3">
+              <label for="prev_exp" class="form-label">Any previous product experience?*</label>
+              <select id="prev_exp" name="prev_exp" class="form-control">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                
+                </select>
+            </div>
+            <div class="form-group mb-3">
+              <label for="linkedin" class="form-label">LinkedIn profile link*</label>
+              <input type="text" id="linkedin" name="linkedin" class="form-control" placeholder="Enter LinkenIn profile URL" required>
+          </div>
+          <div class="form-group mb-3">
+            <label for="resume" class="form-label">Submit resume*</label>
+            <input type="text" id="resume" name="resume" class="form-control" placeholder="Upload Google Drive link for resume" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="portfolio" class="form-label">Product portfolio(if any)</label>
+          <input type="text" id="portfolio" name="portfolio" class="form-control" placeholder="Upload portfolio link here">
+      </div>
+      <div class="form-group md-3">
+        <label for="sector" class="form-label">Any prefered sector?</label>
+        <select id="sector" name="sector" class="form-control">
+          <option value="edtech">edtech</option>
+          <option value="fintech">fintech</option>
+          <option value="ecommerce">ecommerce</option>
+          <option value="healthtech">healthtech</option>
+          </select>
+      </div>
+
+          <div id="form_alerts"></div>
+                  <div>
+                      <button class="btn btn-primary me-2" type="submit">Submit Application</button>
+                      <button class="btn btn-danger" type="reset">Clear details</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWoqDxcJ9nL1eRjONoH1NQhFnXwkHrLnPKWRG0JgRoizK6kWe1iwlxUMg5W1LIcMOQ/exec'
+    const form = document.forms['google-sheet']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => $("#form_alerts").html("<div class='alert alert-success'>Internship details saved successfully.</div>"))
+        .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>An error occured</div>"))
+    })
+</script>
+{% endblock body%}

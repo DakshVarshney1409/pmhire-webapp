@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title%}{% endblock title%}
+    </title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!--Custome style sheet-->
+    <link href="{% static "styles/styles.css" %}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e63d09f118.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color:#eafcff;">
+    
+      
+  <!--NAVBAR START-->
+ 
+        
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-1 py-1 mb-1" style="background-color:#ffffff;">
+          <a href="/home" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <!--Insert logo here-->
+            <img src="{% static "images/pmhirelogo.png" %}" height="50" width="50">
+          </a>
+          
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/home" class="nav-link px-3" style="color:#004799;font-weight: bold;">Home</a></li>
+            <li><a href="/about" class="nav-link px-3" style="color:#004799;font-weight: bold;">About Us</a></li>
+            <li><a href="/home" class="nav-link px-3" style="color:#004799;font-weight: bold;">Pricing</a></li>
+            <li><a href="/contact" class="nav-link px-3" style="color:#004799;font-weight: bold;">Contact Us</a></li>
+            
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <a href=""><button type="button" class="btn btn-outline-primary me-2" style='font-weight: bold;'>Apply Now!</button></a>
+          </div>
+        </header>
+  
+  <!--Navbar End-->
+    
+  {% block body%}{% endblock body%}
+
+  <!-- Footer -->
+<footer id="footwa" class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-3">
+    
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-1 mb-md-0">
+          
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="/about" class="text-white">About us</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-1 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="/contact" class="text-white">Contact us</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-1 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://forms.gle/8d63gieDBfQGPj1Z6" class="text-white">Feedback</a>
+            </li>
+            
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-1 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.privacypolicygenerator.info/live.php?token=wAIqYjmwnzGWNR1tPoFhXXC9sbV7AcCS" class="text-white">Privacy policy</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="aboutus.html">pmhire.in</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
